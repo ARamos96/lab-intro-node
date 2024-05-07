@@ -34,7 +34,22 @@ class SortedList {
     }
   }
 
-  sum() {}
+  sum() {
+    let totalSum = 0
+    if (this.items.length) {
+      
+      return this.items.reduce((a, b) => a + b)
+
+      // for (let i = 0; i < this.items.length; i++) {
+      //   totalSum += this.items[i]
+      // }
+
+      // return totalSum
+
+    } else {
+      return 0
+    }
+  }
 
   avg() {}
 }
